@@ -1,0 +1,168 @@
+@layer base {
+  :root {
+    --shiki-color-text: theme('colors.white');
+    --shiki-token-constant: theme('colors.emerald.300');
+    --shiki-token-string: theme('colors.emerald.300');
+    --shiki-token-comment: theme('colors.zinc.500');
+    --shiki-token-keyword: theme('colors.sky.300');
+    --shiki-token-parameter: theme('colors.pink.300');
+    --shiki-token-function: theme('colors.violet.300');
+    --shiki-token-string-expression: theme('colors.emerald.300');
+    --shiki-token-punctuation: theme('colors.zinc.200');
+  }
+
+  [inert] ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+.swiper {
+  width: 100%;
+  height: 100%; 
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+ @keyframes typing {
+   from {
+     width: 0;
+   }
+
+   to {
+     width: 100%;
+   }
+ }
+
+.typewriter {
+  width: 1025px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: typing 3s steps(13, end);
+  text-align: left;
+  color: white; 
+  border-right: .15em solid orange;
+  position: relative;
+  display: flex;
+}
+
+.typewriter:nth-child(1) {
+  animation-delay: .1s;  
+}
+.typewriter:nth-child(2) {
+  animation-delay: .2s; 
+}
+.typewriter:nth-child(3) {
+  animation-delay: .3s; 
+}
+.typewriter:nth-child(4) {
+  animation-delay: .4s; 
+}
+.typewriter:nth-child(5) {
+  animation-delay: .5s; 
+}
+.typewriter:nth-child(6) {
+  animation-delay: .6s; 
+}
+.typewriter:nth-child(7) {
+  animation-delay: .7s; 
+}
+.typewriter:nth-child(8) {
+  animation-delay: .8s; 
+}
+.typewriter:nth-child(9) {
+  animation-delay: .9s; 
+}
+.typewriter:nth-child(10) {
+  animation-delay: .10s; 
+}
+.typewriter:nth-child(11) {
+  animation-delay: .11s; 
+}
+.typewriter:nth-child(12) {
+  animation-delay: .12s; 
+}
+
+@keyframes blink {
+  0%, 50% { background-color: transparent; }
+  51%, 100% { background-color: white; }
+}
+
+.blink {
+  display: none;
+  position: relative;
+  top: 12px;
+  display: block;
+  width: 5px; /* 光标宽度 */
+  height: 1.2em; /* 与文字行高一致 */
+  background-color: white; /* 光标颜色 */
+  animation: blink 1s steps(30, end) infinite;
+}
+
+.cursor {
+  opacity: 1;
+}
+
+.cursor.blinking {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  height: 80px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+#feishudocs .navigation-bar-wrapper{
+  display: none;
+}
+
+.ant-btn-primary {
+    color: #fff;
+    background: #1677ff;
+}
+
+:where(.css-dev-only-do-not-override-djtmh8).ant-form .ant-form-item{
+  margin-bottom: 17px
+}

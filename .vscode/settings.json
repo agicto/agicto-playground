@@ -1,0 +1,46 @@
+{
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "eslint.nodeEnv": "development",
+    "window.zoomLevel": 0,
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "jsc.transform.react.throwIfNamespace":false,
+    "editor.formatOnSave": false,
+    "tabnine.experimentalAutoImports": true,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[graphql]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "files.associations": {
+      "*.tsx": "typescriptreact",
+      "*.less": "less"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnType": true
+  }
+  
