@@ -2,9 +2,9 @@ version: "3.9"
 services:
   agicto-playground:
     container_name: agicto-playground
-    image: yidadaa/chatgpt-next-web
+    image: agicto/agicto-playground
     ports:
-      - 3000:3000
+      - 8890:8890
     environment:
       - API_KEY=$API_KEY
       - BASE_URL=$BASE_URL
