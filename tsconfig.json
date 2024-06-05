@@ -35,7 +35,5 @@
     ".next/types/**/*.ts",
     "utils/localStorage.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "src-tauri"]
 }
