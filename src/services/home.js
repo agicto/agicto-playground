@@ -109,7 +109,7 @@ export const openAi = (data, options, oldCOntent = '', aiType='message') => {
   let xtextContent = oldCOntent || ''
   // @ts-ignore;
   EventSource = SSE
-  const baseUrl = window.localStorage.getItem('open-base') || 'https://api.ioii.cn'
+  const baseUrl = window.localStorage.getItem('open-base') || 'https://api.agicto.cn'
   var apiUrl = aiType === 'message' ? `${baseUrl}/v1/chat/completions` : `${baseUrl}/v1/images/generations`
   // const apiUrl = "https://api.openaixx.com/v1/inner/search";
   let params = {

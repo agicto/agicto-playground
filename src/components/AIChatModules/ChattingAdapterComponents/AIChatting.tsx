@@ -32,7 +32,7 @@ const getCode = (type: 'Python' | 'JavaScript' | 'Curl', params: any) => {
   if (type === 'Python') {
     return `
 import requests
-endpoint = 'https://api.ioii.cn/v1/chat/completions'
+endpoint = 'https://api.agicto.cn/v1/chat/completions'
 res = requests.post(endpoint, json=${JSON.stringify(params, 2)},
   headers={
   "Authorization": "Bearer sk-meZNPr8fTuZa3dIgomIQZAHVoHQBRBXU9ehsIXaVYW8NeMrC",
@@ -40,7 +40,7 @@ res = requests.post(endpoint, json=${JSON.stringify(params, 2)},
 `
   } else if (type === 'Curl') {
     return `
-curl 'https://api.ioii.cn/v1/chat/completions' \
+curl 'https://api.agicto.cn/v1/chat/completions' \
   -H 'authority: api.ioii.cn' \
   -H 'accept: */*' \
   -H 'authorization: Bearer sk-meZNPr8fTuZa3dIgomIQZAHVoHQBRBXU9ehsIXaVYW8NeMrC' \
@@ -50,7 +50,7 @@ curl 'https://api.ioii.cn/v1/chat/completions' \
 `
   } else {
     return `
-fetch("https://api.ioii.cn/v1/chat/completions", {
+fetch("https://api.agicto.cn/v1/chat/completions", {
   "headers": {
     "accept": "*/*",
     "authorization": "Bearer sk-meZNPr8fTuZa3dIgomIQZAHVoHQBRBXU9ehsIXaVYW8NeMrC",
@@ -96,7 +96,7 @@ export const AIChatting: React.FC<ChattingAdapterProps> = props => {
   const siteConfig = { showImgMsgSender: true, showModel: true, ...props.siteConfig }
   const [inputText, setInputText] = useState('')
   const [apiKey, setApiKey] = useState(!checkServer() ? window.localStorage.getItem('open-key') : '')
-  const [baseUrl, setBaseUrl] = useState(!checkServer() ? window.localStorage.getItem('open-base') : 'https://api.ioii.cn')
+  const [baseUrl, setBaseUrl] = useState(!checkServer() ? window.localStorage.getItem('open-base') : 'https://api.agicto.cn')
   const [imgInputText, setImgInputText] = useState('')
 
   // const [recordText, setRecordText] = useState('')
